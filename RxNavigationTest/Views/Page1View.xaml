@@ -1,5 +1,6 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="RxNavigationTest.Views.Page1View">
+<?xml version="1.0" encoding="UTF-8"?>
+<ui:BaseContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="RxNavigationTest.Views.Page1View" xmlns:ui="clr-namespace:RxNavigationTest.Views" xmlns:vms="clr-namespace:RxNavigationTest.ViewModels" x:TypeArguments="vms:Page1ViewModel">
     <ContentPage.Content>
+        <Button Text="Go To Page 2" x:Name="GoToPage2Button" HorizontalOptions="Center" VerticalOptions="Center"/>
     </ContentPage.Content>
-</ContentPage>
+</ui:BaseContentPage>

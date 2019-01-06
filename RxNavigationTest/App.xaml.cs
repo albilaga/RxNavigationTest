@@ -1,5 +1,4 @@
-﻿using System;
-using Xamarin.Forms;
+﻿using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
 [assembly: XamlCompilation(XamlCompilationOptions.Compile)]
@@ -11,7 +10,8 @@ namespace RxNavigationTest
         {
             InitializeComponent();
 
-            MainPage = new MainPage();
+            var bootstrapper = new AppBootstrapper();
+            MainPage = bootstrapper.GetMainView();
         }
 
         protected override void OnStart()

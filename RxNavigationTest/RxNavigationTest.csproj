@@ -10,6 +10,20 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Xamarin.Forms" Version="3.3.0.967583" />
+    <PackageReference Include="Xamarin.Forms" Version="3.4.0.1009999" />
+    <PackageReference Include="ReactiveUI" Version="9.7.2" />
+    <PackageReference Include="ReactiveUI.XamForms" Version="9.7.2" />
+    <PackageReference Include="ReactiveUI.Events.XamForms" Version="9.7.2" />
+    <PackageReference Include="Splat" Version="5.2.1" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\RxNavigation\RxNavigation.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Views\" />
+    <Folder Include="ViewModels\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Remove="MainPage.xaml.cs" />
   </ItemGroup>
 </Project>
